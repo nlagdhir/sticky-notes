@@ -44,7 +44,7 @@ function App() {
       }
     });
     setNotes(updatedNotes);
-    //set data according to type
+    
   };
   const addNewNotes = () => {
     const newNote = {
