@@ -7,6 +7,8 @@ import logo from "../src/images/logo.png";
 // import ReactDOM from "react-dom/client";
 // import { axe } from "@axe-core/react";
 
+
+//get item from localstorage
 const getItem = () => {
   let notes = localStorage.getItem("notes");
   if (notes) {
@@ -28,7 +30,7 @@ function App() {
   const [notesDetail, setNotesDetail] = useState("");
   const [searchNote, setSearchNote] = useState("");
 
-
+// function trigger after type
   const onType = (editMeId, updatedKey, updatedValue) => {
     const updatedNotes = notes.map((note) => {
       if (note.id !== editMeId) {
